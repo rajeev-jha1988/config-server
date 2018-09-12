@@ -1,0 +1,11 @@
+server:
+  port: 6666
+
+eureka:
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+  server:
+    waitTimeInMsWhenSyncEmpty: 5
+  serviceUrl:
+    DefaultZone: http://localhost:6666
