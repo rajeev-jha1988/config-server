@@ -8,4 +8,4 @@ eureka:
   server:
     waitTimeInMsWhenSyncEmpty: 5
   serviceUrl:
-    DefaultZone: http://localhost:6666
+    DefaultZone: http://localhost:6666/eureka/

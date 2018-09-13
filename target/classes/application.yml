@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: configserver
+  cloud:
+    config:
+      discovery:
+        enabled: true
+      server:
+        encrypt.enabled: false
+        git:
+          uri: https://github.com/rajeev-jha1988/config-server
+          searchPaths: api-gateway,eureka-server,userservice
+
+server:
+  port: 8585
+
+eureka:
+  client:
+    region: default
+    registryFetchIntervalSeconds: 5
+    serviceUrl:
+      defaultZone: http://localhost:6666/eureka/
+
